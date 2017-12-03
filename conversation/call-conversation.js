@@ -74,7 +74,7 @@ function main(params) {
 
     conversation.message(payload, (err, response) => {
       if (err) {
-        reject(err);
+      	reject(err); console.log(err);
       } else {
         const conversationOutput = {
           conversation: response,
